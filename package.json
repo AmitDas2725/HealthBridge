@@ -1,0 +1,29 @@
+{
+  "name": "healthbridge",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=20.19.0 <21"
+  },
+  "workspaces": [
+    "apps/web",
+    "apps/mobile"
+  ],
+  "scripts": {
+    "dev:web": "npm --workspace apps/web run dev",
+    "dev:server": "node --watch server/src/index.js",
+    "start:server": "node server/src/index.js",
+    "dev:mobile": "npm --workspace apps/mobile run start",
+    "build:web": "npm --workspace apps/web run build"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "buffer-from": "^1.1.2",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.5",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mysql2": "^3.24.5"
+  }
+}

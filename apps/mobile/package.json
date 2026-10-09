@@ -1,0 +1,19 @@
+{
+  "name": "healthbridge-mobile",
+  "private": true,
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "expo start --lan",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "ansi-escapes": "^7.1.0",
+    "expo": "~54.0.0",
+    "expo-status-bar": "~3.0.9",
+    "react": "19.1.0",
+    "react-native": "0.81.4"
+  }
+}
